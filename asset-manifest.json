@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/chat/static/css/main.0e61dcbe.css",
+    "main.js": "/chat/static/js/main.59591687.js",
+    "static/media/avtar.png": "/chat/static/media/avtar.729cbc7b704abe9bcd3c.png",
+    "index.html": "/chat/index.html",
+    "main.0e61dcbe.css.map": "/chat/static/css/main.0e61dcbe.css.map",
+    "main.59591687.js.map": "/chat/static/js/main.59591687.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e61dcbe.css",
+    "static/js/main.59591687.js"
+  ]
+}
