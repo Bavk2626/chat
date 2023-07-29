@@ -56,14 +56,13 @@ uploadTask.on('state_changed',
         photoURL:downloadURL,
       });
       await setDoc(doc(db,"usersChat",res.user.uid),{});
-      nav('/')
+      nav('/chat')
     });
     
   }
 );
 }
 catch(err){
-  console.log("jhgfds");
 setErr(true);
 }
   }
@@ -84,7 +83,7 @@ setErr(true);
                 <button>Sing up</button>
             </form> 
             {err ? <span className='err'>something went wrong</span>:<></>}
-            <p>You do have an account ? <Link to="/login">Login</Link></p>
+            <p>You do have an account ? <Link to="/chat/login">Login</Link></p>
         </div>
     </div>
   )

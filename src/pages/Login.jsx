@@ -16,7 +16,7 @@ const Login = () => {
     const password = e.target[1].value;
 try{
  await signInWithEmailAndPassword(auth, email, password)
- nav("/");
+ nav("/chat");
 }
 catch(err){
 setErr(true);
@@ -34,7 +34,7 @@ setErr(true);
                 <button >Log in</button>
             </form> 
             {err ? <span className='err'>Invalid Username or Password</span>:<></>}
-            <p>You do have an account ? <Link to='/register'>Register</Link></p>
+            <p>You do have an account ? <Link to='/chat/register'>Register</Link></p>
         </div>
     </div>
   );

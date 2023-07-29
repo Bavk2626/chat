@@ -12,17 +12,17 @@ function App() {
     if(currentUser.currentUser==null)
     {
       //console.log("anand");
-      return <Navigate to ="/login"/>
+      return <Navigate to ="/chat/login"/>
     }
    return children;
   };
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/">
+      <Route path="/chat">
         <Route index element={<ProtectedRoute><Home/></ProtectedRoute> }></Route>
-      <Route path ="/login" element={<Login/>}></Route>
-      <Route path ="/register" element={<Register/>}></Route>
+      <Route path ="/chat/login" element={<Login/>}></Route>
+      <Route path ="/chat/register" element={<Register/>}></Route>
       </Route>
     </Routes>
     </BrowserRouter>
